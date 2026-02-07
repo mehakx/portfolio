@@ -1,0 +1,103 @@
+Perfect! Now let me show you the CSS and JavaScript files:
+Action: file_editor view /app/portfolio-export/styles.css
+Observation: /app/portfolio-export/styles.css:
+1|/* Reset and Base Styles */
+2|* {
+3|    margin: 0;
+4|    padding: 0;
+5|    box-sizing: border-box;
+6|}
+7|
+8|html {
+9|    scroll-behavior: smooth;
+10|}
+11|
+12|body {
+13|    font-family: 'Rajdhani', 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+14|    background-color: #0a0a0a;
+15|    color: #ffffff;
+16|    overflow-x: hidden;
+17|    -webkit-font-smoothing: antialiased;
+18|    -moz-osx-font-smoothing: grayscale;
+19|}
+20|
+21|/* Custom Scrollbar */
+22|::-webkit-scrollbar {
+23|    width: 8px;
+24|}
+25|
+26|::-webkit-scrollbar-track {
+27|    background: #0a0a0a;
+28|}
+29|
+30|::-webkit-scrollbar-thumb {
+31|    background: #404040;
+32|    border-radius: 4px;
+33|}
+34|
+35|::-webkit-scrollbar-thumb:hover {
+36|    background: #606060;
+37|}
+38|
+39|/* Selection Styling */
+40|::selection {
+41|    background-color: rgba(192, 192, 192, 0.3);
+42|    color: #ffffff;
+43|}
+44|
+45|/* Focus Visible */
+46|*:focus-visible {
+47|    outline: 2px solid #c0c0c0;
+48|    outline-offset: 4px;
+49|}
+50|
+51|/* Star Field Canvas */
+52|#starfield {
+53|    position: fixed;
+54|    top: 0;
+55|    left: 0;
+56|    width: 100%;
+57|    height: 100%;
+58|    pointer-events: none;
+59|    z-index: 1;
+60|}
+61|
+62|/* Main Content */
+63|.main-content {
+64|    position: relative;
+65|    z-index: 10;
+66|}
+67|
+68|/* Hero Section */
+69|.hero-section {
+70|    position: relative;
+71|    min-height: 100vh;
+72|    display: flex;
+73|    align-items: center;
+74|    justify-content: center;
+75|    overflow: hidden;
+76|}
+77|
+78|.nebula-overlay {
+79|    position: absolute;
+80|    inset: 0;
+81|    background: radial-gradient(circle, rgba(128, 0, 128, 0.1) 0%, transparent 70%);
+82|    opacity: 0.3;
+83|    pointer-events: none;
+84|}
+85|
+86|.nebula-2 {
+87|    background: radial-gradient(circle, rgba(0, 0, 139, 0.1) 0%, transparent 70%);
+88|    opacity: 0.2;
+89|    transform: translate(50%, 30%);
+90|}
+91|
+92|.hero-content {
+93|    position: relative;
+94|    z-index: 10;
+95|    text-align: center;
+96|    padding: 0 1.5rem;
+97|}
+98|
+99|.hero-title {
+100|    font-family: 'Orbitron', sans-serif;
